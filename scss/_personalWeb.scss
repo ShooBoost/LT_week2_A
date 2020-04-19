@@ -1,0 +1,209 @@
+
+html, body {
+    width: 1920px;
+    font-family: 'Roboto', sans-serif;
+    background-color: $color-white;
+};
+
+img {
+    display: block;
+};
+
+.greetCover {
+    background-image: url("/asset/greetCoverBG.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 374px;
+    color: white;
+
+    // 為了讓背景圖片完整呈現，所以使用 pb
+    padding-bottom: 256px;
+    span {
+        font-size: 24px;
+        line-height: 42px;
+        font: Bold Italic 24px/42px Roboto;
+
+        // 設 psa 讓 span 不影響 .greetCover 的高
+        position: absolute;
+        margin-top: -21px;
+        
+    };
+    h1 {
+        // Black Italic 套不上去
+        font: Italic 80px/106px Roboto;
+        font-weight: 900;
+        margin-bottom: 27px;
+    };
+    p {
+        font: Bold Italic 24px/37px Roboto;
+        font-weight: 500;
+        margin-bottom: 63px;
+    };
+    ul {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 10px;        
+    };
+    a {
+        // 移除 img 設為 block 後，a 會產生的神秘空白
+        display: inline-block;
+    };
+};
+
+.about {
+    padding-top: 56px;
+    // 因為子元素有 img 而用 tac 無法將 img 同時置中，所以用 df 排
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h3 {
+        // Medium Italic 套不上去
+        font: Italic 64px/84px Roboto;
+        font-weight: 500;
+        margin-bottom: 39px;
+    };
+    img {
+        margin-bottom: 21px;
+    };
+    ul {
+        font: Bold Italic 24px/33px Roboto;
+        font-weight: 600;
+        text-align: center;
+    };
+    .profile {
+        margin-bottom: 27px;
+    };
+    .profile li {
+        margin-bottom: 4px;
+    };
+    .experience {
+        margin-bottom: 29px;
+    };
+    .experience::before {
+        content: '';
+        display: block;
+        border: 0.5px solid $color-black;
+        width: 384px;
+
+        // 置中囉
+        margin: 0 auto;
+        margin-bottom: 31px;
+    };
+    
+    .experience li {
+        margin-bottom: 28px;
+    };
+    .experience p::before {
+        content: '';
+        // 用 dib 讓 p::before 跟 p 在同一行
+        display: inline-block;
+        position: relative;
+        background-color: $color-red;
+        width: 22px;
+        height: 22px;
+        border-radius: 50%;
+        margin-right: 16px;
+        margin-top: 6px;
+    };  
+};
+
+.brandIntro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $color-black;
+    color: $color-white;
+    text-align: center;
+    padding-top: 56px;
+    h3 {
+        font: Italic 64px/84px Roboto;
+        font-weight: 700;
+        margin-bottom: 12px;
+    };
+    // 這用 h5 不知會不會太大牌
+    h5 {
+        font: Italic 24px/32px Roboto;
+        font-weight: 400;
+        margin-bottom: 31px;
+    };
+    p {
+        font: Italic 20px/37px Roboto;
+        font-weight: 400;
+        margin-bottom: 48px;
+    };
+    ul {
+        width: 1200px;
+        display: flex;
+        flex-wrap: wrap;
+        // space-around 幫你左右自動等比留白
+        justify-content: space-around;
+        margin-bottom: 120px;
+    };
+    li {
+        margin-bottom: 40px;
+    };
+};
+
+.work {
+    background-image: url('/asset/photo-1561291386-5be50364cfb5.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center bottom;
+    padding-top: 56px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h3 {
+        font: Italic 64px/84px Roboto;
+        font-weight: 700;
+        margin-bottom: 23px;
+    };
+    h5 {
+        font: Italic 20px/35px Roboto;
+        font-weight: 500;
+        margin-bottom: 48px;
+    };
+    ul {
+        width: 1200px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 104px;
+    };
+    img {
+        margin-bottom: 16px;
+    };
+    a {
+        color: $color-white;
+        text-decoration: none;
+    };
+    p {
+        text-align: center;
+        margin-bottom: 56px;
+        font: Italic 20px/28px Roboto;
+        font-weight: 500;
+    }; 
+};
+
+.contact {
+    background-color: $color-black;
+    color: $color-white;
+    text-align: center;
+    padding-top: 56px;
+    padding-bottom: 64px;
+    h3 {
+        font: Italic 64px/84px Roboto;
+        font-weight: 300;
+        margin-bottom: 15px;
+    };
+    a {
+        font: Italic 24px/36px Roboto;
+        font-weight: 500;
+        margin-bottom: 16px;
+        color: $color-white;
+        text-decoration: none;
+    };
+};

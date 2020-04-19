@@ -1,0 +1,313 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html, body {
+  width: 1920px;
+  font-family: 'Roboto', sans-serif;
+  background-color: #FFFFFF;
+}
+
+img {
+  display: block;
+}
+
+.greetCover {
+  background-image: url("/asset/greetCoverBG.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 374px;
+  color: white;
+  padding-bottom: 256px;
+}
+
+.greetCover span {
+  font-size: 24px;
+  line-height: 42px;
+  font: Bold Italic 24px/42px Roboto;
+  position: absolute;
+  margin-top: -21px;
+}
+
+.greetCover h1 {
+  font: Italic 80px/106px Roboto;
+  font-weight: 900;
+  margin-bottom: 27px;
+}
+
+.greetCover p {
+  font: Bold Italic 24px/37px Roboto;
+  font-weight: 500;
+  margin-bottom: 63px;
+}
+
+.greetCover ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 10px;
+}
+
+.greetCover a {
+  display: inline-block;
+}
+
+.about {
+  padding-top: 56px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about h3 {
+  font: Italic 64px/84px Roboto;
+  font-weight: 500;
+  margin-bottom: 39px;
+}
+
+.about img {
+  margin-bottom: 21px;
+}
+
+.about ul {
+  font: Bold Italic 24px/33px Roboto;
+  font-weight: 600;
+  text-align: center;
+}
+
+.about .profile {
+  margin-bottom: 27px;
+}
+
+.about .profile li {
+  margin-bottom: 4px;
+}
+
+.about .experience {
+  margin-bottom: 29px;
+}
+
+.about .experience::before {
+  content: '';
+  display: block;
+  border: 0.5px solid #000000;
+  width: 384px;
+  margin: 0 auto;
+  margin-bottom: 31px;
+}
+
+.about .experience li {
+  margin-bottom: 28px;
+}
+
+.about .experience p::before {
+  content: '';
+  display: inline-block;
+  position: relative;
+  background-color: #891818;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  margin-right: 16px;
+  margin-top: 6px;
+}
+
+.brandIntro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #000000;
+  color: #FFFFFF;
+  text-align: center;
+  padding-top: 56px;
+}
+
+.brandIntro h3 {
+  font: Italic 64px/84px Roboto;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.brandIntro h5 {
+  font: Italic 24px/32px Roboto;
+  font-weight: 400;
+  margin-bottom: 31px;
+}
+
+.brandIntro p {
+  font: Italic 20px/37px Roboto;
+  font-weight: 400;
+  margin-bottom: 48px;
+}
+
+.brandIntro ul {
+  width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 120px;
+}
+
+.brandIntro li {
+  margin-bottom: 40px;
+}
+
+.work {
+  background-image: url("/asset/photo-1561291386-5be50364cfb5.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center bottom;
+  padding-top: 56px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.work h3 {
+  font: Italic 64px/84px Roboto;
+  font-weight: 700;
+  margin-bottom: 23px;
+}
+
+.work h5 {
+  font: Italic 20px/35px Roboto;
+  font-weight: 500;
+  margin-bottom: 48px;
+}
+
+.work ul {
+  width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 104px;
+}
+
+.work img {
+  margin-bottom: 16px;
+}
+
+.work a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.work p {
+  text-align: center;
+  margin-bottom: 56px;
+  font: Italic 20px/28px Roboto;
+  font-weight: 500;
+}
+
+.contact {
+  background-color: #000000;
+  color: #FFFFFF;
+  text-align: center;
+  padding-top: 56px;
+  padding-bottom: 64px;
+}
+
+.contact h3 {
+  font: Italic 64px/84px Roboto;
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+
+.contact a {
+  font: Italic 24px/36px Roboto;
+  font-weight: 500;
+  margin-bottom: 16px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+/*# sourceMappingURL=main.css.map */

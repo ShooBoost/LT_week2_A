@@ -10,7 +10,10 @@ img {
 };
 
 .greetCover {
-    background-image: url("asset/greetCoverBG.png");
+    // .css 跟 .png 在不同層資料
+    // 夾要先用 ../ 帶我到 .css 的上一層，也就是離開 css 資料夾
+    // 回到了整個專案的主資料夾後，才能指定進入旗下的 asset 資料夾
+    background-image: url("../asset/greetCoverBG.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
@@ -148,7 +151,7 @@ img {
 };
 
 .work {
-    background-image: url('asset/photo-1561291386-5be50364cfb5.png');
+    background-image: url('../asset/photo-1561291386-5be50364cfb5.png');
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center bottom;

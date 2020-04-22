@@ -1,6 +1,5 @@
 
 html, body {
-    width: 1920px;
     font-family: 'Roboto', sans-serif;
     background-color: $color-white;
 };
@@ -10,6 +9,9 @@ img {
 };
 
 .greetCover {
+    // 老師說這邊寫定高度可以增加穩定度
+    height: 330px;
+    
     // .css 跟 .png 在不同層資料
     // 夾要先用 ../ 帶我到 .css 的上一層，也就是離開 css 資料夾
     // 回到了整個專案的主資料夾後，才能指定進入旗下的 asset 資料夾
@@ -114,13 +116,11 @@ img {
 };
 
 .brandIntro {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    text-align: center;
     background-color: $color-black;
     color: $color-white;
-    text-align: center;
     padding-top: 56px;
+    padding-bottom: 120px;
     h3 {
         font: Italic 64px/84px Roboto;
         font-weight: 700;
@@ -138,12 +138,13 @@ img {
         margin-bottom: 48px;
     };
     ul {
+        // 設定固定寬度，搭配 margin 0 auto 讓 ul 在畫面垂直置中
         width: 1200px;
+        margin: 0 auto;
         display: flex;
         flex-wrap: wrap;
         // space-around 幫你左右自動等比留白
         justify-content: space-around;
-        margin-bottom: 120px;
     };
     li {
         margin-bottom: 40px;

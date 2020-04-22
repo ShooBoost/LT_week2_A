@@ -53,7 +53,6 @@ table {
 }
 
 html, body {
-  width: 1920px;
   font-family: 'Roboto', sans-serif;
   background-color: #FFFFFF;
 }
@@ -63,6 +62,7 @@ img {
 }
 
 .greetCover {
+  height: 330px;
   background-image: url("../asset/greetCoverBG.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -180,20 +180,11 @@ img {
 }
 
 .brandIntro {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  text-align: center;
   background-color: #000000;
   color: #FFFFFF;
-  text-align: center;
   padding-top: 56px;
+  padding-bottom: 120px;
 }
 
 .brandIntro h3 {
@@ -216,6 +207,7 @@ img {
 
 .brandIntro ul {
   width: 1200px;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -223,7 +215,6 @@ img {
       flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  margin-bottom: 120px;
 }
 
 .brandIntro li {

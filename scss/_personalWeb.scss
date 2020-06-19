@@ -10,7 +10,7 @@ img {
 
 .greetCover {
     // 老師說這邊寫定高度可以增加穩定度
-    height: 330px;
+    height: 958px;
     
     // .css 跟 .png 在不同層資料
     // 夾要先用 ../ 帶我到 .css 的上一層，也就是離開 css 資料夾
@@ -18,14 +18,11 @@ img {
     background-image: url("../asset/greetCoverBG.png");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100%;
+    background-size: cover;
     display: flex;
     justify-content: center;
-    padding-top: 374px;
+    align-items: center;
     color: white;
-
-    // 為了讓背景圖片完整呈現，所以使用 pb
-    padding-bottom: 256px;
     span {
         font-size: 24px;
         line-height: 42px;

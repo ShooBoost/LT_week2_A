@@ -61,6 +61,7 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow: hidden;
     h3 {
         // Medium Italic 套不上去
         font: Italic 64px/84px Roboto;
@@ -123,6 +124,12 @@ img {
         font-weight: 700;
         margin-bottom: 12px;
     };
+    @media(max-width:768px){
+        h3{
+            font: Italic 52px/64px Roboto;
+            font-weight: 700;
+        }
+    }
     // 這用 h5 不知會不會太大牌
     h5 {
         font: Italic 24px/32px Roboto;
@@ -136,7 +143,7 @@ img {
     };
     ul {
         // 設定固定寬度，搭配 margin 0 auto 讓 ul 在畫面垂直置中
-        width: 1200px;
+        width: 100%;
         margin: 0 auto;
         display: flex;
         flex-wrap: wrap;
@@ -157,6 +164,7 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0 10px;
     h3 {
         font: Italic 64px/84px Roboto;
         font-weight: 700;
@@ -168,7 +176,7 @@ img {
         margin-bottom: 48px;
     };
     ul {
-        width: 1200px;
+        width: 100%;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -178,7 +186,7 @@ img {
         margin-bottom: 16px;
     };
     a {
-        color: $color-white;
+        color: $color-black;
         text-decoration: none;
     };
     p {

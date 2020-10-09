@@ -52,6 +52,18 @@ table {
   border-spacing: 0;
 }
 
+.w-100 {
+  width: 100%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.w-30 {
+  width: 30%;
+}
+
 html, body {
   font-family: 'Roboto', sans-serif;
   background-color: #FFFFFF;
@@ -125,6 +137,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  overflow: hidden;
 }
 
 .about h3 {
@@ -194,6 +207,13 @@ img {
   margin-bottom: 12px;
 }
 
+@media (max-width: 768px) {
+  .brandIntro h3 {
+    font: Italic 52px/64px Roboto;
+    font-weight: 700;
+  }
+}
+
 .brandIntro h5 {
   font: Italic 24px/32px Roboto;
   font-weight: 400;
@@ -207,7 +227,7 @@ img {
 }
 
 .brandIntro ul {
-  width: 1200px;
+  width: 100%;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -238,6 +258,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 0 10px;
 }
 
 .work h3 {
@@ -253,7 +274,7 @@ img {
 }
 
 .work ul {
-  width: 1200px;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -270,7 +291,7 @@ img {
 }
 
 .work a {
-  color: #FFFFFF;
+  color: #000000;
   text-decoration: none;
 }
 
@@ -302,4 +323,3 @@ img {
   color: #FFFFFF;
   text-decoration: none;
 }
-/*# sourceMappingURL=main.css.map */
